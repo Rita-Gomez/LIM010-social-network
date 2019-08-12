@@ -4,9 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="main.css">
   <title>Social Network</title>
 </head>
 <body>
+    <section id="img">
+      <div class="img">
+        <img src="img/logo1.png" alt="logo">
+      </div>
+    </section>
+    <section id="login">
+      <h1>WeTalk</h1>
+      <input type="text" placeholder="Email" id="emailtxt">
+      <input type="password" placeholder="Contraseña" id="contraseñatxt">
+      <button id="boton-guardar">Iniciar Seción</button>
+    </section>
+    <section id="page2" class="hide">
+      Email almacenado:
+      <label type="text" id="email"></label><br>
+      Contraseña almacenada:
+      <label type="text" id="contraseña"></label><br>
+      <button id="boton-cargar">
+        Cargar elementos
+      </button>
+    </section>
   <script type="module" src="main.js"></script>
 </body>
 </html>
