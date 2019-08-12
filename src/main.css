@@ -1,0 +1,47 @@
+body{
+  background-image: url(img/fondologin.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hide{
+  display: none;
+}
+#login {
+  width: 300px;
+  height: 310px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  float: right;
+  margin-right: 140px;
+  margin-top: 120px;
+  padding: 30px;
+}
+#img{
+  float: left;
+  margin-left: 130px;
+  margin-top: 120px;
+}
+h1{
+  text-align: center;
+  color: #ffffff;
+}
+input[type="text"],
+input[type="password"] {
+  padding: 13px;
+  border: none;
+  border-bottom: 2px solid #ffffff;
+  background: transparent;
+  margin-bottom: 30px;
+}
+#boton-guardar{
+  padding: 13px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+#boton-guardar:hover {
+  padding: 13px;
+  border-radius: 50px;
+  cursor: pointer;
+  background: transparent;
+}
