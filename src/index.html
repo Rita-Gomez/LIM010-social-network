@@ -14,19 +14,28 @@
       </div>
     </section>
     <section id="login">
-      <h1>WeTalk</h1>
-      <input type="text" placeholder="Email" id="emailtxt">
-      <input type="password" placeholder="Contraseña" id="contraseñatxt">
-      <button id="boton-guardar">Iniciar Seción</button>
+      <div class="login">
+      <h1 class="talk">WeTalk</h1>
+      <input type="text" placeholder="Email" id="email">
+      <input type="password" placeholder="Contraseña" id="contraseña">
+      <button id="boton-segunda">Ingresar</button>
+      <p id="respuesta"></p><button id="ir-guardar" class="hide">Registrate</button>
+      </div>
     </section>
     <section id="page2" class="hide">
-      Email almacenado:
-      <label type="text" id="email"></label><br>
-      Contraseña almacenada:
-      <label type="text" id="contraseña"></label><br>
-      <button id="boton-cargar">
-        Cargar elementos
-      </button>
+      <div class="page2">
+      <h1>Registro</h1>
+      <label type="text" id="name">Ingrese su nombre:</label>
+      <input type="text" placeholder="Name" id="nametxt">
+      <label type="text" id="email">Ingrese su email:</label>
+      <input type="text" placeholder="Email" id="emailtxt">
+      <label type="text" id="contraseña">Ingrese su contraseña:</label>
+      <input type="password" placeholder="Contraseña" id="contraseñatxt">
+      <div class="botones">
+      <button id="boton-guardar">Guardar Datos</button>
+      <button id="boton-regresar">Regresar</button>
+      </div>
+      </div>
     </section>
   <script type="module" src="main.js"></script>
 </body>

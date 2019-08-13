@@ -6,9 +6,21 @@ body{
 .hide{
   display: none;
 }
-#login {
+.login {
   width: 300px;
-  height: 310px;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  float: right;
+  margin-right: 140px;
+  margin-top: 120px;
+  padding: 30px;  
+  background: rgba(215, 234, 234, 0.71);
+}
+.page2{
+  width: 300px;
+  height: 380px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,6 +28,7 @@ body{
   margin-right: 140px;
   margin-top: 120px;
   padding: 30px;
+  background: rgba(215, 234, 234, 0.71);
 }
 #img{
   float: left;
@@ -24,7 +37,14 @@ body{
 }
 h1{
   text-align: center;
-  color: #ffffff;
+  color: #5f5151;
+  font-size: 32px;
+  margin-top: 0;
+}
+.talk{
+  text-align: center;
+  color: #5f5151;
+  font-size: 35px;
 }
 input[type="text"],
 input[type="password"] {
@@ -34,14 +54,43 @@ input[type="password"] {
   background: transparent;
   margin-bottom: 30px;
 }
-#boton-guardar{
+.botones{
+  display: flex;
+  justify-content: space-around;
+}
+#boton-guardar,
+#boton-regresar {
   padding: 13px;
   border-radius: 50px;
   cursor: pointer;
+  width: 120px;
+}
+#boton-segunda {
+  padding: 13px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+#ir-guardar {
+  padding: 13px;
+  border-radius: 50px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  padding-top: 274px;
+  padding-left: 185px;
+  position: absolute;
+  color: red;
+}
+#respuesta{
+  padding-left: 55px;
 }
 #boton-guardar:hover {
   padding: 13px;
   border-radius: 50px;
   cursor: pointer;
   background: transparent;
+}
+span{
+  font-weight: 800;
+  color: #ffffff;
 }
