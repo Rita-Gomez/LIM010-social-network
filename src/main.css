@@ -62,9 +62,6 @@ h2{
   text-align: justify;
   color: #707375;
 }
-b{
-  font-weight: 900;
-}
 input[type="text"],
 input[type="email"],
 input[type="password"] {

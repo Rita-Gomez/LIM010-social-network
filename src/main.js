@@ -34,12 +34,13 @@ save.addEventListener('click', () => {
 
 give.addEventListener('click', () => {
   /* Obtener datos almacenados */
-  const email = sessionStorage.getItem('Email');
-  const contraseña = sessionStorage.getItem('Contraseña');
-  if (email === '' && contraseña === '') {
+  const email = document.getElementById('email').value;
+  const contraseña = document.getElementById('contraseña').value;
+  if (email === localStorage.getItem('Email') && contraseña === localStorage.getItem('Contraseña') ){
     respuesta.innerHTML = 'puedes ingresar';
+  } else {
+    respuesta.innerHTML = 'No puedes acceder';
   }
-  respuesta.innerHTML = 'No puedes acceder';
 });
 
 volver.addEventListener('click', () => {
