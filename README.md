@@ -138,6 +138,8 @@ El objetivo de usar Firestore en este proyecto, es que aprendes a manejar y pers
     >   consideró necesario.
 
 ## Objetivos de aprendizaje
+### Lograr implementar un objecto convertiendo en array para aplicar metodos de arrays.
+### Poder explicar mejor los metodos y funciones.
 
 ### HTML y CSS
 - [ ] HTML semántico
