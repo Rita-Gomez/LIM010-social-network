@@ -10,8 +10,8 @@ const save = document.getElementById('boton-guardar');
 const give = document.getElementById('boton-segunda');
 const volver = document.getElementById('boton-regresar');
 const login = document.getElementById('login');
-const page2 = document.getElementById('page2');
 const ir = document.getElementById('ir-guardar');
+const page2 = document.getElementById('page2');
 const respuesta = document.getElementById('respuesta');
 // funcion
 save.addEventListener('click', () => {
@@ -23,9 +23,6 @@ save.addEventListener('click', () => {
   localStorage.setItem('Nombre', nombre);
   localStorage.setItem('Email', email);
   localStorage.setItem('Contraseña', contraseña);
-  sessionStorage.setItem('Nombre', nombre);
-  sessionStorage.setItem('Email', email);
-  sessionStorage.setItem('Contraseña', contraseña);
   /* Limpiando los campos o inputs */
   document.getElementById('nametxt').value = '';
   document.getElementById('emailtxt').value = '';
@@ -42,7 +39,6 @@ give.addEventListener('click', () => {
   if (email === '' && contraseña === '') {
     respuesta.innerHTML = 'puedes ingresar';
   }
-  ir.classList.remove('hide');
   respuesta.innerHTML = 'No puedes acceder';
 });
 
@@ -60,4 +56,4 @@ volver.addEventListener('click', () => {
 ir.addEventListener('click', () => {
   page2.classList.remove('hide');
   login.classList.add('hide');
-});
+}); 
