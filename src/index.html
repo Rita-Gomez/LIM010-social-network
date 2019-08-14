@@ -10,16 +10,17 @@
 <body>
     <section id="img">
       <div class="img">
-        <img src="img/logo1.png" alt="logo">
+        <p id="formato-texto">Bienvenida a WeTalk un app que te permite organizar planes con tus amigos, el fin es deshacerse de esos materiales que generan la contaminación de los oceános.</p>
       </div>
     </section>
     <section id="login">
       <div class="login">
-      <h1 class="talk">WeTalk</h1>
-      <input type="text" placeholder="Email" id="email">
+      <img src="img/ima.png" alt="logo">
+      <h2>Bienvenida a <b>WeTalk</b> la red que formarás parte de un grupo de personas que ayudará con la limpieza de nuestros mares--domde te permite organizarte de manera divertida.</h2>
+      <input type="email" placeholder="Email" id="email">
       <input type="password" placeholder="Contraseña" id="contraseña">
       <button id="boton-segunda">Ingresar</button>
-      <p id="respuesta"></p><button id="ir-guardar" class="hide">Registrate</button>
+      <p id="respuesta">¿No tienes una cuenta?<a href="#" id="ir-guardar">Regístrate</a></p>
       </div>
     </section>
     <section id="page2" class="hide">
@@ -28,7 +29,7 @@
       <label type="text" id="name">Ingrese su nombre:</label>
       <input type="text" placeholder="Name" id="nametxt">
       <label type="text" id="email">Ingrese su email:</label>
-      <input type="text" placeholder="Email" id="emailtxt">
+      <input type="email" placeholder="usuario@servidor.com" id="emailtxt" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}">
       <label type="text" id="contraseña">Ingrese su contraseña:</label>
       <input type="password" placeholder="Contraseña" id="contraseñatxt">
       <div class="botones">
@@ -36,6 +37,9 @@
       <button id="boton-regresar">Regresar</button>
       </div>
       </div>
+    </section>
+    <section id="page3" class="hide">
+      <h3>Pagina de red social</h3>
     </section>
   <script type="module" src="main.js"></script>
 </body>
