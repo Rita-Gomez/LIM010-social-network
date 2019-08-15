@@ -12,7 +12,6 @@ body{
 }
 img{
   width: 100%;
-  border-bottom-style: inset;
 }
 #img, #login, #page2, #page3{
   width: 50%;
@@ -24,6 +23,23 @@ img{
   margin: 1em auto;
   font: caption;
   width: 50%;
+}
+#respuesta{
+  padding: 0.75rem 1rem 0.75rem 1rem;
+  border: 1px solid #ddd;
+  background: #fff;
+  color: #1d1c1d;
+  border-left-width: 5px;
+  margin: 0 auto 1rem;
+  border-radius: .25rem;
+  border-left-color: #4e4b4b;
+}
+.bx{
+  color: #e01e5a;
+}
+#bx-1{
+  color: #ffffff;
+  font-size: 25px;
 }
 .page2{
   display: flex;
@@ -39,16 +55,19 @@ img{
   background-size: cover;
   background-position: top;
 }
-#formato-texto{
+.img{
   color: #ffffff;
   font-size: 25px;
-  text-align: center;
   margin: 0;
   background: rgba(50, 51, 51, 0.57);
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#formato-texto{
+  text-align: center;
+  padding: 170px;
 }
 h1{
   text-align: center;
@@ -57,10 +76,10 @@ h1{
   margin-top: 0;
   border-bottom-style: inset;
 }
-h2{
-  font-size: medium;
-  text-align: justify;
-  color: #707375;
+#passinvalida{
+  color: rgb(248, 3, 16);
+  margin-bottom: 30px;
+  font-size: unset;
 }
 input[type="text"],
 input[type="email"],
@@ -92,7 +111,7 @@ input[type="password"] {
   text-decoration: none;
   font-size: medium;
 }
-#respuesta{
+#mostrar{
   text-align: center;
 }
 #boton-guardar:hover {
@@ -120,7 +139,6 @@ span{
   }
   img{
     height: 50%;
-    border-bottom-style: inset;
   }
   #formato-texto {
    display: none;
