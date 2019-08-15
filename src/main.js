@@ -13,17 +13,20 @@ const login = document.getElementById('login');
 const ir = document.getElementById('ir-guardar');
 const page2 = document.getElementById('page2');
 const respuesta = document.getElementById('respuesta');
+const invalida = document.getElementById('passinvalida');
 // funcion
 save.addEventListener('click', () => {
-  /* Captura de datos escrito en los inputs */
   const email = document.getElementById('emailtxt').value;
   const nombre = document.getElementById('nametxt').value;
   const contraseña = document.getElementById('contraseñatxt').value;
-  /* Guardando los datos en el LocalStorage */
   localStorage.setItem('Nombre', nombre);
   localStorage.setItem('Email', email);
   localStorage.setItem('Contraseña', contraseña);
-  /* Limpiando los campos o inputs */
+  if (contraseña.length >= 6) {
+    invalida.innerHTML = '';
+  } else {
+    invalida.innerHTML = '<i class="bx bx-error-circle"></i> La contraseña debe tener al menos 6 caracteres';
+  }
   document.getElementById('nametxt').value = '';
   document.getElementById('emailtxt').value = '';
   document.getElementById('contraseñatxt').value = '';
@@ -33,13 +36,15 @@ save.addEventListener('click', () => {
 });
 
 give.addEventListener('click', () => {
-  /* Obtener datos almacenados */
   const email = document.getElementById('email').value;
   const contraseña = document.getElementById('contraseña').value;
-  if (email === localStorage.getItem('Email') && contraseña === localStorage.getItem('Contraseña') ){
-    respuesta.innerHTML = 'puedes ingresar';
+  if (email === localStorage.getItem('Email') && contraseña === localStorage.getItem('Contraseña')) {
+    /* respuesta.innerHTML = 'puedes ingresar'; */
+    // eslint-disable-next-line no-alert
+    alert('puedes ingresar');
   } else {
-    respuesta.innerHTML = 'No puedes acceder';
+    respuesta.classList.remove('hide');
+    respuesta.innerHTML = '<i class="bx bx-error"></i>Lo sentimos. Has introducido una dirección o contraseña incorrecta.';
   }
 });
 
