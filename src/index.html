@@ -15,17 +15,17 @@
       </div>
     </section>
     <section id="login">
-      <div class="login">
+      <form class="login">
       <p id="respuesta" class="hide"></p>
-      <img src="img/ima.png" alt="logo">
+      <img id="ima" src="img/ima.png" alt="logo">
       <input type="email" placeholder= "   ✉    Email" id="email">
       <input type="password" placeholder="   🔒     Contraseña" id="contraseña">
       <button id="boton-segunda">Ingresar</button>
       <p id="mostrar">¿No tienes una cuenta?<a href="#" id="ir-guardar">Regístrate</a></p>
-      </div>
+      </form>
     </section>
     <section id="page2" class="hide">
-      <div class="page2">
+      <form class="page2">
       <h1>Registro</h1>
       <label type="text" id="name">Ingrese su nombre:</label>
       <input type="text" placeholder="   👤     Name" id="nametxt">
@@ -33,16 +33,14 @@
       <input type="email" placeholder="   ✉    usuario@servidor.com" id="emailtxt" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}">
       <label type="text" id="contraseña">Ingrese su contraseña:</label>
       <input type="password" placeholder="   🔒     Contraseña" id="contraseñatxt">
-      <p id="passinvalida"></p>
+      <p id="passalert"></p>
       <div class="botones">
       <button id="boton-guardar">Registrar</button>
       <button id="boton-regresar">Regresar</button>
       </div>
-      </div>
+      </form>
     </section>
-    <section id="page3" class="hide">
-      <h1>Page Red Social</h1>
-    </section>
-  <script type="module" src="main.js"></script>
+    <script src="cipher.js"></script>
+    <script type="module" src="main.js"></script>
 </body>
 </html>
