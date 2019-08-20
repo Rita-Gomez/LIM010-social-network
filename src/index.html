@@ -11,15 +11,18 @@
 <body>
     <section id="img">
       <div class="img">
-        <p id="formato-texto"><i id="bx-1" class='bx bxs-quote-alt-left'></i>Bienvenida a WeTalk una red social en donde formarás parte de un grupo de personas que ayudará con la limpieza de las playas de tu distrito.<i id="bx-1" class='bx bxs-quote-alt-right'></i></p>
+        <p id="formato-texto"><i id="bx-1" class='bx bxs-quote-alt-left'>
+        </i>Bienvenida(o) a WeTalk una red social en donde formarás parte de una comunidad de personas que ayudará con la limpieza de las playas de tu país.<i id="bx-1" class='bx bxs-quote-alt-right'></i></p>
       </div>
     </section>
     <section id="login">
       <form class="login">
       <p id="respuesta" class="hide"></p>
+
       <img id="ima" src="img/ima.png" alt="logo">
       <input type="email" placeholder= "   ✉    Email" id="email">
       <input type="password" placeholder="   🔒     Contraseña" id="contraseña">
+
       <button id="boton-segunda">Ingresar</button>
       <p id="mostrar">¿No tienes una cuenta?<a href="#" id="ir-guardar">Regístrate</a></p>
       </form>
@@ -28,12 +31,14 @@
       <form class="page2">
       <h1>Registro</h1>
       <label type="text" id="name">Ingrese su nombre:</label>
-      <input type="text" placeholder="   👤     Name" id="nametxt">
+      <input type="text" placeholder="   👤     Name" id="nametxt" required>
       <label type="text" id="email">Ingrese su email:</label>
-      <input type="email" placeholder="   ✉    usuario@servidor.com" id="emailtxt" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}">
+      <input type="email" placeholder="   ✉    usuario@servidor.com" id="emailtxt" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" required>
       <label type="text" id="contraseña">Ingrese su contraseña:</label>
+
       <input type="password" placeholder="   🔒     Contraseña" id="contraseñatxt">
       <p id="passalert"></p>
+
       <div class="botones">
       <button id="boton-guardar">Registrar</button>
       <button id="boton-regresar">Regresar</button>

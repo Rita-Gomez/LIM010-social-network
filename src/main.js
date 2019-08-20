@@ -1,15 +1,9 @@
 // Este es el punto de entrada de tu aplicacion
 // import { verPersonaje } from './lib/index.js';
-/* eslint-disable no-undef */
-/* eslint-disable no-plusplus */
-/* eslint-disable max-len */
-/* eslint-disable no-else-return */
-/* eslint-disable no-restricted-globals */
-/* eslint-disable semi-spacing */
-// eslint-disable-next-line no-console
-// console.log(verPersonaje('hOLA MUNDO'));
+
 
 // variables globales
+
 const register = document.getElementById('boton-guardar');
 const logearse = document.getElementById('boton-segunda');
 const retornar = document.getElementById('boton-regresar');
@@ -20,6 +14,7 @@ const respuesta = document.getElementById('respuesta');
 const alerta = document.getElementById('passalert');
 const probandoArray = localStorage.getItem('usuarios') ? JSON.parse(localStorage.getItem('usuarios')) : [];
 // funcion
+
 register.addEventListener('click', () => {
   const email = document.getElementById('emailtxt').value;
   const nombre = document.getElementById('nametxt').value;
@@ -63,6 +58,7 @@ logearse.addEventListener('click', () => {
       respuesta.classList.remove('hide');
       respuesta.innerHTML = '<i class="bx bx-error"></i>Lo sentimos. Has introducido una dirección o contraseña incorrecta.';
     }
+
   }
 });
 
@@ -78,4 +74,7 @@ retornar.addEventListener('click', () => {
 go.addEventListener('click', () => {
   page2.classList.remove('hide');
   login.classList.add('hide');
-});
+
+}); 
+
+
