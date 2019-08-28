@@ -7,6 +7,86 @@
   <title>Document</title>
 </head>
 <body>
-  
+
+    <section id="img">
+      <div class="img">
+        <p id="formato-texto"><i id="bx-1" class='bx bxs-quote-alt-left'></i>Bienvenida a WeTalk una red social anime en donde formarás parte de un grupo de personas que compartirán noticias, series y mucho más.<i id="bx-1" class='bx bxs-quote-alt-right'></i></p>
+      </div>
+    </section>
+    <section id="login">
+      <form class="login">
+      <p id="respuesta" class="hide"></p>
+      <img id="ima" src="img/logoejemplo.png" alt="logo">
+      <input type="email" placeholder= "   ✉    Email" id="email">
+      <input type="password" placeholder="   🔒     Contraseña" id="contraseña">
+      <button id="btn-ingresar">Ingresar</button>
+      <p id="mostrar">¿No tienes una cuenta?<a href="#" id="ir-guardar">Regístrate</a></p>
+      </form>
+    </section>
+    <section id="page2" class="hide">
+      <form class="page2">
+      <h1>Registro</h1>
+      <label type="text" id="labelname">Ingrese su nombre:</label>
+      <input type="text" placeholder="   👤     Name" id="nametxt">
+      <label type="text" id="labelemail">Ingrese su email:</label>
+      <input type="email" placeholder="   ✉    usuario@servidor.com" id="emailtxt" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}">
+      <label type="text" id="labelcontraseña">Ingrese su contraseña:</label>
+      <input type="password" placeholder="   🔒     Contraseña" id="contraseñatxt">
+      <p id="passalert"></p>
+      <div class="botones">
+      <button id="btn-guardar">Registrar</button>
+      <button id="btn-regresar">Regresar</button>
+      </div>
+      </form>
+    </section>
+    <section id="page3" class="hide">
+      <header>
+        <div class="nav">
+          <a id="out">
+            <image id="imagenima" src="img/logoejemplo.png" alt="logo">
+          </a>
+          <label id="imagetoggle" for="toggle">&#9776;</label>
+          <input type="checkbox" id="toggle" />
+          <div class="menu">
+            <a id="ver-name"></a>
+            <a id="logout"><i id="bx-2" class='bx bxs-log-out'></i>Logout</a>
+          </div>
+        </div>
+      </header>
+    </section>
+    <section id="page4" class="hide">
+      <div id="dividir">
+      <div id="lado-izquierdo">
+        <div id="fondo-page">          
+          <img  id="logoladoizquierdo" src="img/imagen1.png" alt="logo">
+        </div>
+        <div id="botones">
+          <img id="logo-7" src="img/logo7.png" alt="logo1">
+          <p id="parrafonombre"></p>
+        </div>
+      </div>
+      <div id="lado-derecho">
+        <div id="subject">
+          <textarea id="textarea" name="subject" placeholder="Write something.."></textarea>
+        </div>        
+        <div id="botones-navegacion">
+          <div id="div-file">
+            <p id="texto"><i class='bx bxs-photo-album' id="bx-3"></i></p>
+            <input type="file" id="btn-enviar">
+          </div>
+          <input type="submit" id="btn-mostrartexto" value="Compartir">
+        </div>
+        <div id="dontlook" class="hide">          
+            <p id="parrafotextoarea"></p>
+        </div>
+        <div id="lookatme" class="hide">          
+            <p id="parrafotextocorrecto"></p>
+        </div>
+      </div>
+      </div>
+    </section>
+    <script src="cipher.js"></script>
+    <script type="module" src="main.js"></script>
+
 </body>
 </html>
