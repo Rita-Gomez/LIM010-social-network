@@ -1,3 +1,4 @@
+
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-const-assign */
 /* eslint-disable consistent-return */
@@ -146,3 +147,4 @@ etiquetaahrefregister.addEventListener('click', () => {
   page2.classList.remove('hide');
   login.classList.add('hide');
 });
+
