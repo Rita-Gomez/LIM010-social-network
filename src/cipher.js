@@ -1,6 +1,3 @@
-/* eslint-disable no-mixed-operators */
-/* eslint-disable no-plusplus */
-/* eslint-disable radix */
 window.cipher = {
   encode: (offset, string) => {
     let mensajecifrado = '';
