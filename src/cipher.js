@@ -13,7 +13,7 @@ window.cipher = {
     return mensajecifrado;
   },
   decode: (offset, string) => {
-    let mensajeDescifrado = "";
+    let mensajeDescifrado = '';
     for (let i = 0; i < string.length; i++) {
       if (string.charCodeAt(i) >= 65 && string.charCodeAt(i) <= 90) {
         const textocaracter = (string.charCodeAt(i) + 65 - parseInt(offset)) % 26 + 65;

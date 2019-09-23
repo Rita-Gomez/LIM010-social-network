@@ -17,7 +17,7 @@ body {
   text-align: right;
   height: 70px;
   line-height: 70px;  
-  background: #c51424; /* #3a3d3e*/
+  background: #c51424; 
 }
 
 .menu {
@@ -52,10 +52,6 @@ body {
   cursor: pointer;
 }
 
-#dividir {
-  display: flex;
-  justify-content: space-between;
-}
 
 #ima {
   width: 100%;
@@ -90,8 +86,13 @@ body {
 }
 #dividir {
   display: flex;
-  justify-content: flex-end;
   height: inherit;
+  justify-content: center;
+  /* justify-content: space-between;
+  justify-content: flex-end; */
+  flex-flow: wrap;
+ 
+    
 }
 
 #lado-izquierdo {
@@ -147,6 +148,7 @@ td {
 #botones {
   display: flex;
   justify-content: space-around;
+  
 }
 #textarea{
   width: 700px;
@@ -179,7 +181,7 @@ td {
 #btn-enviar {
   position: absolute;
   top: 140px;
-  left: 530px;
+  left: 80px;
   right: 0;
   bottom: 0;
   width: 10%;
@@ -204,14 +206,17 @@ td {
   cursor: pointer;
 }
 #btn {
-  font-size: 14px;
+  font-size: 32px;
   border: none;
   width: 50px;
-  cursor: pointer;
+  height: 47px;
+  background-color: transparent;
+  /* cursor: pointer;
+  position: absolute;
+  margin-top: 277px;
+  margin-left: 300px; */
 }
-#botones {
-  font-size: 12px;
-}
+
 .btnEditar {
   background-color: transparent;
   border: none;
@@ -344,7 +349,7 @@ ul {
 }
 
 .bx {
-  color: #e01e5a;
+  color: #c51424;
 }
 
 #bx-1 {
@@ -371,7 +376,7 @@ ul {
 }
 
 #img {
-  background-image: url(img/giphy-1.gif);
+  background-image: url(img/imagen2.gif);
   justify-content: flex-end;
   background-repeat: no-repeat;
   background-size: cover;
@@ -412,12 +417,6 @@ input[type="password"] {
   margin-bottom: 30px;
   font-size: medium;
 }
-
-.botones {
-  display: flex;
-  justify-content: space-around;
-}
-
 #btn-guardar,
 #btn-regresar{
   padding: 13px;
@@ -428,14 +427,6 @@ input[type="password"] {
   color:#ffffff;
   background: #ef0000;
 }
-#btn-ingresar:hover,
-#btn-guardar:hover,
-#btn-regresar:hover{  
-  color:#ef0000;
-  background: #ffffff;
-  border: 1px solid #ef0000;
-}
-
 #btn-ingresar {  
   padding: 13px;
   border-radius: 50px;
@@ -444,7 +435,20 @@ input[type="password"] {
   font-size: medium;  
   color:#ffffff;
   background: #ef0000;
+    width: 60%;
+    margin-left: 60px;
+    margin-right: 60px;
+  
 }
+#btn-ingresar:hover,
+#btn-guardar:hover,
+#btn-regresar:hover{  
+  color:#ef0000;
+  background: #ffffff;
+  border: 1px solid #ef0000;
+}
+
+
 
 #ir-guardar {
   padding: 13px;
@@ -548,11 +552,7 @@ span {
     padding: 25px 0;
     margin-top: 60px;
   }
-  #dividir {
-    display: flex;
-    justify-content: center;
-    flex-flow: wrap;
-  }
+
   #logoladoizquierdo{   
     width: 330px;
     height: 190px;
@@ -611,13 +611,18 @@ span {
     background: #ddd;
   }
 
-  #btn-ingresar {
-    width: 60%;
-    margin-left: 60px;
-    margin-right: 60px;
+
+  #btn {
+    font-size: 32px;
+    border: none;
+    width: 50px;
+    height: 47px;
+    background-color: transparent;
     cursor: pointer;
-    color:#ffffff;
-    background: #ff0000;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 230px;
+    border-radius: 20px;
   }
 
   #mostrar {
