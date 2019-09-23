@@ -19,7 +19,7 @@ const msjErroneoLogin = document.getElementById('respuesta');
 const msjErroneoRegistro = document.getElementById('passalert');
 const msjErroneoPost = document.getElementById('dontlook');
 const msjVacioPost = document.getElementById('parrafotextoarea');
-const arrayLocalStorage = localStorage.getItem('usuarios') ? JSON.parse(localStorage.getItem('usuarios')) : [];
+
 
 btnRegistro.addEventListener('click', () => {
   const email = document.getElementById('emailtxt').value;
@@ -39,8 +39,9 @@ btnRegistro.addEventListener('click', () => {
     return false;
   }
   const encriptar = window.cipher.encode(33, contraseña);
+  const arrayLocalStorage = leerLocalStorage('usuarios');
   arrayLocalStorage.push({ nombre, email, encriptar });
-  localStorage.setItem('usuarios', JSON.stringify(arrayLocalStorage));
+  guardarLocalStorage('usuarios', arrayLocalStorage);
   msjErroneoRegistro.innerHTML = 'Ya estas registrada(o)';
   document.getElementById('nametxt').value = '';
   document.getElementById('emailtxt').value = '';
@@ -56,6 +57,7 @@ btnIngresar.addEventListener('click', () => {
   const contraseñainput = document.getElementById('contraseña').value;
   const infoname = document.getElementById('ver-name');
   const parrafoname = document.getElementById('parrafonombre');
+  const arrayLocalStorage = leerLocalStorage('usuarios');
   for (let i = 0; i < arrayLocalStorage.length; i++) {
     const descencriptar = window.cipher.decode(33, arrayLocalStorage[i].encriptar);
     if (email === arrayLocalStorage[i].email && descencriptar === contraseñainput) {

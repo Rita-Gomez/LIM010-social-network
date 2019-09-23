@@ -21,7 +21,6 @@ describe('validarEmail', () => {
     expect(data.validarEmail('ams_t2.hotmail.com')).toEqual(false);
   });
 });
-
 describe('validarNombre', () => {
   it('debería retornar true si el nombre es válido', () => {
     expect(data.validarNombre('andrea')).toEqual(true);
@@ -41,6 +40,6 @@ describe('eliminarElementoArray', () => {
 
 describe('agregarElementoArray', () => {
   it('debería retornar [{"area":"post4"}]', () => {
-    expect(data.agregarElementoArray({ area: 'post4' }, post)).toEqual([{ area: 'post1' }, { area: 'post2' }, { area: 'post3' }, { area: 'post4' }]);
+    expect(data.agregarElementoArray({ area: 'post4' }, post)).toEqual(4);
   });
 });

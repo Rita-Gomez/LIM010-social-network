@@ -25,7 +25,7 @@ const leerLocalStorage = string => (localStorage.getItem(string) ? JSON.parse(lo
 
 const guardarLocalStorage = (string, arr) => (localStorage.setItem(string, JSON.stringify(arr)));
 
-const agregarElementoArray = (ele, arr) => arr.concat(ele);
+const agregarElementoArray = (ele, arr) => arr.push(ele);
 
 const eliminarElementoArray = (arr, indice) => arr.filter((y, posicion) => posicion !== indice);
 
